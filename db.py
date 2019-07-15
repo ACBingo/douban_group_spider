@@ -1,6 +1,6 @@
 import pymysql
 
-def connect():
+def Connect():
     return pymysql.connect(host='localhost',
     port=3306,
     user='root',
@@ -10,7 +10,7 @@ def connect():
 
 def query():
     sql_str = "SELECT * from douban"
-    con = connect()
+    con = Connect()
     cur = con.cursor()
     cur.execute(sql_str)
     rows = cur.fetchall()
