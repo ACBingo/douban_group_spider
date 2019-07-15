@@ -4,3 +4,4 @@ MechanicalSoup
 jieba
 watchdog
 aiohttp
+pymysql
